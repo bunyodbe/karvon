@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.site_container {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.categories_box {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px
+}
+
+.categories_box__title {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #C4C4C4;
+}

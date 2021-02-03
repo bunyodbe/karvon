@@ -1,0 +1,26 @@
+.slide_wrapper {
+    width: 1300px;
+    height: 400px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.site_slider {
+    width: 65%;
+    margin-right: 30px;
+}
+
+.second_slide {
+    width: 35%;
+    height: 100%;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_slide h2 {
+    font-size: 60px;
+}

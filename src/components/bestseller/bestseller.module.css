@@ -1,0 +1,109 @@
+.site_container {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section_title {
+    position: relative;
+    font-weight: 900;
+    font-size: 25px;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+  
+.section_title::after {
+    position: absolute;
+    bottom: -10px;
+    content: '';
+    display: block;
+    width: 70%;
+    height: 4px;
+    background-color: #6C5DD4;
+}
+
+.bestseller {
+    margin-bottom: 30px;
+}
+
+.bestseller_card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bestseller_card {
+    position: relative;
+    width: 24%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    margin-bottom: 15px;
+}
+
+.bestseller_card__img {
+    width: 100%;
+    height: 200px;
+}
+
+.bestseller-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+.bestseller_card__mask {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 0 20px;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0);
+    transition: .4s;
+}
+
+.star_list {
+    margin-top: 10px;
+    font-size: 20px;
+    color: yellow;
+}
+
+.star_list .star_icon:not(:last-child) {
+    margin-right: 3px;
+}
+
+.bestseller_card:hover .bestseller_card__mask {
+    transform: scale(1);
+    transform-origin: top;
+}
+
+.bestseller_card__title {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+  
+.bestseller_card__link {
+    padding: 5px 15px;
+    border: 1px solid #6C5DD4;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+.bestseller_card__link:hover {
+    background-color: #FFFFFF;
+    color: #6C5DD4;
+}
