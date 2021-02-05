@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Card, CardImg, CardImgOverlay, Table, CardBody} from "reactstrap";
 import './product.css';
-import imgSrc from '../images/alessandro-erbetta-mpWPcRT9D1E-unsplash.jpg';
-import imgSrcLittle from '../images/madara-parma-5lgC0sAa6Gg-unsplash.jpg';
+import car from '../components/img/car.PNG'
 import {
     FaStar, FaComment, FaFacebook, FaInstagram, FaTelegram, FaTwitter,
     FaAlipay, FaShoppingCart, FaHeart, FaBolt
@@ -55,7 +54,7 @@ class Product extends Component {
                 <Row className="mt-4">
                     <Col md={{size: 4}}>
                         <Card>
-                            <CardImg className="imgSrc" src={imgSrc} alt=""/>
+                            <CardImg className="imgSrc" src={car} alt=""/>
                             <CardImgOverlay className="text-center">
                                 <h3 className="text-center imgText mt-5">All<br/> Good<br/> News</h3>
                                 <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -106,7 +105,7 @@ class Product extends Component {
                         </p>
                         <Row className="pb-2 m-0 border-bottom">
                             <Col md={{size: 12}} className="p-0 m-0">
-                                <img src={imgSrcLittle} alt="" className="LittleImgstyle" width={60} height={50}/>
+                                <img src={car} alt="" className="LittleImgstyle" width={60} height={50}/>
                                 <div className="span-style">
                                     <p id="pStyle">Writen by</p>
                                     <h6>Kevin Smiley</h6>
@@ -209,7 +208,7 @@ class Product extends Component {
                                     <Col md={{size: 4}}>
                                         <Card className="p-0 bg-transparent d-inline-block mt-3">
                                             <CardBody className="p-0">
-                                                <CardImg className="imgStyleSidebar" src={imgSrc} alt=""/>
+                                                <CardImg className="imgStyleSidebar" src={car} alt=""/>
                                                 <CardImgOverlay
                                                     className="text-white text-center mt-5 font-weight-bold">
                                                     <h3 className="text-white">{item.name}</h3>
@@ -298,7 +297,7 @@ class Product extends Component {
                  <Col md={{size: 2}}>
                      <Card className="p-0 bg-transparent d-inline-block mt-3">
                          <CardBody className="p-0">
-                             <CardImg className="imgStyleFooter" src={imgSrc} alt=""/>
+                             <CardImg className="imgStyleFooter" src={car} alt=""/>
                              <CardImgOverlay
                                  className="text-white text-center mt-5 font-weight-bold">
                                  <h5 className="text-white">Terrible Madnesss</h5>
