@@ -243,7 +243,7 @@ class Product extends Component {
                         <a href="#" type="button" className="btn mt-3 bg-info viewMore">View More</a>
                     </Col>
                 </Row>
-                <Row className="mt-4 bg-light p-5">
+                <Row className="mt-5 bg-light p-5">
                     <Col md={{size: 3}}>
                         <Row md={12}>
                             <Col md={{size: 4}}>
@@ -289,13 +289,23 @@ class Product extends Component {
                         </Row>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mt-5">
                     <Col md={{size: 12}}>
                         <h3 className="font-weight-bold">Books on Sale</h3>
                     </Col>
                 </Row>
                 <Row>
-
+                 <Col md={{size: 2}}>
+                     <Card className="p-0 bg-transparent d-inline-block mt-3">
+                         <CardBody className="p-0">
+                             <CardImg className="imgStyleFooter" src={imgSrc} alt=""/>
+                             <CardImgOverlay
+                                 className="text-white text-center mt-5 font-weight-bold">
+                                 <h5 className="text-white">Terrible Madnesss</h5>
+                             </CardImgOverlay>
+                         </CardBody>
+                     </Card>
+                 </Col>
                 </Row>
             </Container>
         )

@@ -14,7 +14,13 @@
     width: 160px;
     box-shadow: 4px 6px #aaaaaa;
     height: 180px;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+.imgStyleFooter{
+    width: 120px;
+    box-shadow: 4px 6px #aaaaaa;
+    height: 140px;
+    border-radius: 8px;
 }
 .imgText{
     color: #ffffff;

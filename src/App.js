@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import {createStore} from "redux";
 import reducer from "./reducer/Myreducer";
 import Home from "./pages/Home";
+import Filter from "./pages/Filter";
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
                         <Router>
                             <Switch>
                                 <Route path={'/'} exact render={()=><Home/>} />
+                                <Route path={'/online-bozor'} exact render={()=><Filter/>} />
                                 <Route path={'/products'} exact  render={()=><Product/>}/>
                                 <Redirect to={'/'}/>
                             </Switch>

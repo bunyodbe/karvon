@@ -58,16 +58,16 @@ class Header extends Component {
                                     <Link className={`${st.site_nav__link} ${st.active_nav}`} to="/">Bosh sahifa</Link>
                                 </li>
                                 <li className={`${st.site_nav__item}`}>
-                                    <a className={`${st.site_nav__link}`} href="#">Onlayn bozor</a>
+                                    <Link className={`${st.site_nav__link}`} to="/online-bozor">Onlayn bozor</Link>
                                 </li>
                                 <li className={`${st.site_nav__item}`}>
                                     <Link className={`${st.site_nav__link}`} to="/products">Mahsulotlar</Link>
                                 </li>
                                 <li className={`${st.site_nav__item}`}>
-                                    <a className={`${st.site_nav__link}`} href="#">Blog</a>
+                                    <Link className={`${st.site_nav__link}`} to="#">Blog</Link>
                                 </li>
                                 <li className={`${st.site_nav__item}`}>
-                                    <a className={`${st.site_nav__link}`} href="#">Kontakt</a>
+                                    <Link className={`${st.site_nav__link}`} to="#">Kontakt</Link>
                                 </li>
                             </ul>
                         </div>
