@@ -1,9 +1,12 @@
 import React, {Component} from "react";
-import {Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import Filter from "./pages/Filter"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Product from "./products/Product";
+import {Provider} from "react-redux";
+import {createStore} from "redux";
+import reducer from "./reducer/Myreducer";
+import Home from "./pages/Home";
 
 
 class App extends Component {
@@ -11,11 +14,18 @@ class App extends Component {
         return (
             <div>
                 <Layout>
-                    {/* <Home/> */}
-                    <Filter/>
+                    <Provider store={createStore(reducer)}>
+                        <Router>
+                            <Switch>
+                                <Route path={'/'} exact render={()=><Home/>} />
+                                <Route path={'/products'} exact  render={()=><Product/>}/>
+                                <Redirect to={'/'}/>
+                            </Switch>
+                        </Router>
+                    </Provider>,
                 </Layout>
             </div>
-        )
+                )
     }
 }
 

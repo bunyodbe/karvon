@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import  st from './header.module.css';
 import { FaPhoneAlt, FaEnvelope, FaBars, FaCaretDown, FaSearch, FaRegUser } from "react-icons/fa";
+import {Link} from "react-router-dom";
 class Header extends Component {
     render() {
         return (
@@ -54,13 +55,13 @@ class Header extends Component {
                         <div className={`${st.header_bottom}`}>
                             <ul className={`${st.site_nav__list}`}>
                                 <li className={`${st.site_nav__item}`}>
-                                    <a className={`${st.site_nav__link} ${st.active_nav}`} href="#">Bosh sahifa</a>
+                                    <Link className={`${st.site_nav__link} ${st.active_nav}`} to="/">Bosh sahifa</Link>
                                 </li>
                                 <li className={`${st.site_nav__item}`}>
                                     <a className={`${st.site_nav__link}`} href="#">Onlayn bozor</a>
                                 </li>
                                 <li className={`${st.site_nav__item}`}>
-                                    <a className={`${st.site_nav__link}`} href="#">Mahsulotlar</a>
+                                    <Link className={`${st.site_nav__link}`} to="/products">Mahsulotlar</Link>
                                 </li>
                                 <li className={`${st.site_nav__item}`}>
                                     <a className={`${st.site_nav__link}`} href="#">Blog</a>

@@ -9,5 +9,5 @@ const Layout = (props) =>{
             <Footer/>
         </>
     )
-}
+};
 export default Layout;
