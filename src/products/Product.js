@@ -7,6 +7,12 @@ import {
     FaAlipay, FaShoppingCart, FaHeart, FaBolt
 } from 'react-icons/fa'
 import {} from 'bootstrap/dist/css/bootstrap.min.css'
+// import OwlCarousel from 'react-owl-carousel'
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
+import OwlCarousel from "react-owl-carousel";
+import 'react-owl-carousel/umd/OwlCarousel.min'
+
 
 const datum = [
     {
@@ -42,7 +48,6 @@ class Product extends Component {
         super(props);
         this.state = {};
     }
-
     render() {
         return (
             <Container>
@@ -293,24 +298,53 @@ class Product extends Component {
                         <h3 className="font-weight-bold">Books on Sale</h3>
                     </Col>
                 </Row>
-                <Row>
-                 <Col md={{size: 2}}>
-                     <Card className="p-0 bg-transparent d-inline-block mt-3">
-                         <CardBody className="p-0">
-                             <CardImg className="imgStyleFooter" src={car} alt=""/>
-                             <CardImgOverlay
-                                 className="text-white text-center mt-5 font-weight-bold">
-                                 <h5 className="text-white">Terrible Madnesss</h5>
-                             </CardImgOverlay>
-                         </CardBody>
-                     </Card>
+                <Row className="mt-3">
+                 <Col md={{size: 12}}>
+                    <OwlCarousel
+                     className="owl-theme"
+                     items="6"
+                     autoPlay
+                     margin={10}
+                     nav
+                     dots
+                     loop
+                    >
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                        <div className="item">
+                            <img src={car} alt=""/>
+                        </div>
+                    </OwlCarousel>
                  </Col>
                 </Row>
             </Container>
         )
     }
-
-
 }
 
 export default Product;

@@ -17,9 +17,11 @@
     border-radius: 10px;
 }
 .imgStyleFooter{
-    width: 120px;
+    width: 100%;
+    /*height: auto;*/
     box-shadow: 4px 6px #aaaaaa;
-    height: 140px;
+    /*height: 140px;*/
+    min-height: 150px;
     border-radius: 8px;
 }
 .imgText{
