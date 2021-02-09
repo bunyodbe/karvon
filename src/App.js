@@ -17,15 +17,12 @@ class App extends Component {
             <div>
                 <Layout>
                     <Provider store={createStore(reducer)}>
-                        <Router>
                             <Switch>
                                 <Route path={'/'} exact render={()=><Home/>} />
                                 <Route path={'/online-bozor'} exact render={()=><Filter/>} />
                                 <Route path={'/products'} exact  render={()=><Product/>}/>
-                                <Route path={'/register'} exact render={()=><Register/>}/>
                                 <Redirect to={'/'}/>
                             </Switch>
-                        </Router>
                     </Provider>,
                 </Layout>
             </div>
