@@ -1,0 +1,132 @@
+.site_container {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.register_section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.register_section h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register_section p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.register_category {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.personal_cabinet {
+    margin-right: 20px;
+    width: 350px;
+    height: 120px;
+    padding-top: 15px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.personal_cabinet span, .for_bizness span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.userTie_icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #6C5DD4;
+}
+
+.for_bizness {
+    width: 350px;
+    height: 120px;
+    padding-top: 15px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.handShake_icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #6C5DD4;
+}
+
+.active_register_category {
+    background-color: #6C5DD4;
+}
+
+.active_register_category span, .active_register_category .reg_icon {
+    color: #fff;
+}
+
+.register_box {
+    width: 720px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: left;
+    padding: 30px 25px;
+}
+
+.register_box__item label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register_box__item input {
+    width: 100%;
+    padding: 0 15px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.register_box input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.register_box input:focus {
+    transition: .1s;
+    border: none;
+    border-bottom: 3px solid #6C5DD4;
+}
+
+.register_box__item {
+    margin-bottom: 30px;
+}
+
+.agreeCheck_item input {
+    margin-right: 10px;
+}
+
+.agreeCheck_item label {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.register_btn {
+    border: none;
+    padding: 5px 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6C5DD4;
+    margin-top: 20px;
+    font-size: 12px;
+    border-radius: 3px;
+}

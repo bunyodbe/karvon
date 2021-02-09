@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import st from './signInModal.module.css';
+import st from './signIn.module.css';
 
-class SignInModal extends Component {
+class SignIn extends Component {
     render() { 
         return ( 
             <>
@@ -34,4 +34,4 @@ class SignInModal extends Component {
     }
 }
  
-export default SignInModal;
+export default SignIn;

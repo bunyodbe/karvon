@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import {Container,Row,Col} from 'reactstrap';
-import Carousel from '../components/carousel/carousel';
-import HotBlog from '../components/hotBlog/hotBlog';
-import ExpertBlog from '../components/expertBlog/expert';
-import RatingBlog from '../components/rating/rating';
-import Discount from '../components/discount/discount';
-import Bestseller from '../components/bestseller/bestseller';
-import Services from '../components/ourServices/services';
-import SignInModal from '../components/signInModal/signInModal';
+import Carousel from '../components/home/carousel/carousel';
+import HotBlog from '../components/home/hotBlog/hotBlog';
+import ExpertBlog from '../components/home/expertBlog/expert';
+import RatingBlog from '../components/home/rating/rating';
+import Discount from '../components/home/discount/discount';
+import Bestseller from '../components/home/bestseller/bestseller';
+// import Services from '../components/home/ourServices/services';
+import SignIn from '../components/auth/signIn/signIn';
 class Home extends Component {
     render() {
         return (
@@ -18,8 +17,8 @@ class Home extends Component {
                 <RatingBlog/>
                 <Discount/>
                 <Bestseller/>
-                <Services/>
-                <SignInModal/>
+                {/* <Services/> */}
+                <SignIn/>
             </>
         );
     }

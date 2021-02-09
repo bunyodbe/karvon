@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FilterOptions from '../components/filterOption/filterOption';
+import FilterOptions from '../../components/filters/filterOption/filterOption';
 import {Container, Row, Col} from 'reactstrap';
 import st from './filter.module.css';
 

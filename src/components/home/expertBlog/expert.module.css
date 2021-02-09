@@ -1,5 +1,5 @@
 .site_container {
-    max-width: 1300px;
+    max-width: 1300px!important;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -28,8 +28,6 @@
 }
 
 .experts_news {
-    display: flex;
-    width: 100%;
     height: 360px;
     border-radius: 5px;
     padding: 20px;
@@ -37,7 +35,6 @@
 }
 
 .experts_news__wrapper {
-    width: 50%;
     overflow: hidden;
 }
 
@@ -89,10 +86,8 @@
 
 .main_experts__news {
     position: relative;
-    width: 50%;
     height: 100%;
     background-color: #C4C4C4;
-    margin-right: 40px;
 }
   
 .main_experts__news__mask {
@@ -107,7 +102,7 @@
   
 .main_experts__news__title {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     color: #FFFFFF;
